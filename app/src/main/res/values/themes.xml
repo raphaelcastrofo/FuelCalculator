@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FuelCaculatorOf" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+
+        <item name="android:windowBackground">@color/primary</item>
+    </style>
+
+    <style name="Theme.FuelCaculatorOf" parent="Base.Theme.FuelCaculatorOf" />
+</resources>
