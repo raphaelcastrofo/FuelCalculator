@@ -29,14 +29,14 @@ class DistanceActivity : AppCompatActivity() {
             } else {
                 val distance = distanceTemp.toString().toFloat()
 
-                val totalLiter = consumption / distance
+                val totalLiter = distance / consumption
                 val total = totalLiter * price
 
                 val intent = Intent(this, SummaryActivity::class.java)
                 intent.putExtra("price", price)
                 intent.putExtra("consumption", consumption)
                 intent.putExtra("distance", distance)
-                intent.putExtra("total ", total)
+                intent.putExtra("total", total)
                 startActivity(intent)
 
             }
