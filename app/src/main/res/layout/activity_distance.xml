@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:backgroundTint="@color/primary"
-    tools:context=".ConsumptionActivity">
+    tools:context=".DistanceActivity">
 
     <LinearLayout
         android:id="@+id/vg_header"
@@ -22,13 +22,13 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="351dp"
-            android:layout_height="211dp"
+            android:layout_width="264dp"
+            android:layout_height="231dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginStart="25dp"
-            android:layout_marginTop="130dp"
+            android:layout_marginTop="100dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/consumptionimage" />
+            android:src="@drawable/distamceimage" />
     </LinearLayout>
 
     <TextView
@@ -37,13 +37,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="94dp"
-        android:text="Type how many km/l your car make:"
+        android:text="type in km the distance:"
         android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="@+id/vg_header"
         app:layout_constraintTop_toBottomOf="@+id/vg_header" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/til_consumption"
+        android:id="@+id/til_distance"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -58,10 +58,10 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_hint">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/tie_consumption"
+            android:id="@+id/tie_distance"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="E.g: 13.4 (km/l)"
+            android:hint="E.g: 135 (km)"
             android:inputType="numberDecimal"
             android:paddingStart="8dp"
             android:textSize="24sp"
@@ -70,18 +70,17 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/btn_next"
+        android:id="@+id/btn_calculate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:backgroundTint="@color/second_color"
         android:paddingStart="68dp"
         android:paddingEnd="68dp"
-        android:text="Next"
+        android:text="Calculate"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-

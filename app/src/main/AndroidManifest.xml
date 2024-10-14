@@ -24,6 +24,9 @@
 
         <activity android:name=".PriceActivity" />
         <activity android:name="ConsumptionActivity"/>
+        <activity android:name="DistanceActivity"/>
+        <activity android:name=".SummaryActivity"/>
+
     </application>
 
 </manifest>
